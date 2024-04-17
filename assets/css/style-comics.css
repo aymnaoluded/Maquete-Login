@@ -1,0 +1,18 @@
+body{
+    background-image: url(../img/fondoN.png);    
+    position: relative;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.container a {
+    text-decoration: none;
+}
+

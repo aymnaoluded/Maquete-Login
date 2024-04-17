@@ -12,16 +12,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color:rgb(241, 215, 215);
-    background: url('../img/redhood.jpg') no-repeat;
+    color:white;
+    background: url('../img/redhood.jpg') no-repeat center;
     background-size: cover;
     background-position: center;
+    backdrop-filter:blur(0.3rem);
 }
 
 .container {
     width: 420px;
     background: transparent;
-    border: 2px solid rgb(241, 215, 215);
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -48,10 +48,12 @@ body {
     border-radius: 40px;
     font-size: 16px;
     padding: 20px 45px 20px 20px;
+    color: white;
 }
 
 .input-box input::placeholder {
     color:rgb(255, 255, 255);
+    
 }
 
 .input-box i {

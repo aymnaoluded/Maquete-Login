@@ -1,17 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('login') no-repeat;
+    color:rgb(241, 215, 215);
+    background: url('../img/redhood.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .container {
     width: 420px;
-    background: purple;
-    color: #fff;
+    background: transparent;
+    border: 2px solid rgb(241, 215, 215);
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -25,7 +35,7 @@ body {
     position: relative;
     width: 100%;
     height: 50px;
-    margin: 50px -35px;
+    margin: 50px 0px;
 }
 
 .input-box input {
@@ -34,15 +44,14 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(241, 215, 215);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: #fff;
+    color:rgb(255, 255, 255);
 }
 
 .input-box i {
@@ -61,12 +70,12 @@ body {
 }
 
 .recordar-olvidar label input {
-    accent-color: #fff;
+    accent-color: rgb(76, 76, 226);
     margin-right: 3px;
 }
 
 .recordar-olvidar a {
-    color: #fff;
+    color:rgb(241, 215, 215);
     text-decoration: none;
 }
 
@@ -77,14 +86,14 @@ body {
 .container .btn {
     width: 100%;
     height: 45px;
-    background: #fff;
+    background: #a37e7e;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: rgb(241, 215, 215);
     cursor: pointer;
     font-size: 16px;
-    color: #1b1919;
+    color: white;
     font-weight: 600;
 }
 
@@ -95,7 +104,7 @@ body {
 }
 
 .enlace-registro p a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }

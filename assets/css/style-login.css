@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:white;
+    background: url('../img/redhood.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter:blur(0.3rem);
+}
+
+.container {
+    width: 420px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.container h1 {
+    font-size:36px;
+    text-align: center;
+}
+
+.container .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 50px 0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(241, 215, 215);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+}
+
+.input-box input::placeholder {
+    color:rgb(255, 255, 255);
+    
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.container .recordar-olvidar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.recordar-olvidar label input {
+    accent-color: rgb(76, 76, 226);
+    margin-right: 3px;
+}
+
+.recordar-olvidar a {
+    color:rgb(241, 215, 215);
+    text-decoration: none;
+}
+
+.recordar-olvidar a:hover {
+    text-decoration: underline;
+}
+
+.container .btn {
+    width: 100%;
+    height: 45px;
+    background: #a37e7e;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: rgb(241, 215, 215);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.container .enlace-registro {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.enlace-registro p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.enlace-registro p a:hover {
+    text-decoration: underline;
+}

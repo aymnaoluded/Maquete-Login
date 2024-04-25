@@ -110,9 +110,44 @@ body {
 .enlace-registro p a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .enlace-registro p a:hover {
+    text-decoration: underline;
+}
+
+.form-container.sign-up button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background: #a37e7e;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: rgb(241, 215, 215);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    transition: 1s ease-in-out;
+}
+
+.container .active .form-container .sign-in{
+    transform:translateY(-450px) ;
+}
+
+.form-container .Acepto-terminos {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px;
+}
+
+.form-container .signUp-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-container .signUp-link p a:hover {
     text-decoration: underline;
 }

@@ -4,53 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="assets/css/style-login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
-    rel='stylesheet'>
+    
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="form-container sign-in">
-        <form action="index.html">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username"
-                required>
-                <i class='bx bxs-user'></i>
-            </div>
-
-            <div class="input-box">
-                <input type="password"
-                placeholder="password"required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
-
-            <div class="recordar-olvidar">
-                <label><input type="checkbox"> Acuérdate de mí</label>
-                <a href="#"> Has olvidado tu contraseña?</a>
-            </div>
-            
-            <button type="submit" class="btn">Login</button>
-            </a>
-
-            <div class="enlace-registro">
-                <p>No tienes cuenta? <a href="#">Registar</a></p>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
+    <header class="header">
         
-    <script src="Login.js"></script>
+    <nav class="nav">
+        <a href="#" class="nav_logo">Tumanga</a>
+
+        <ul class="nav_items">
+            <li class="nav_item">
+
+                <a href="#" class="nav_link">Home</a>
+                <a href="#" class="nav_link">Manga</a>
+                <a href="#" class="nav_link">Services</a>
+                <a href="#" class="nav_link">Contact</a>
+            </li>
+        </ul>
+
+        <button class="button">Login</button>
+        
+    </nav>
+    </header>
+
+
+        <div class="container">
+            <div class="form-container sign-in">
+            <form action="index.html">
+                <i class="uil uil-times form-close"></i>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username"
+                    required>
+                    <i class='uil uil-user'></i>
+                </div>
+    
+                <div class="input-box">
+                    <input type="password"
+                    placeholder="password"required>
+                    <i class='uil uil-lock-alt'></i>
+                    <i class='uil uil-eye-slash contraseña'></i>
+                </div>
+    
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox"> Acuérdate de mí</label>
+                    <a href="#"> Has olvidado tu contraseña?</a>
+                </div>
+                
+                <button type="submit" class="btn">Login</button>
+                </a>
+    
+                <div class="enlace-registro">
+                    <p>No tienes cuenta? <a href="#">Registar</a></p>
+                </div>
+            </div>
+
+    
 </body>
-
-
-
 </html>

@@ -4,6 +4,68 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.);
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav_logo, .nav_link, .button {
+    color: #fff;
+}
+
+.nav_logo {
+    font-size: 25px;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 25px;
+}
+
+.nav_link {
+    color: #fff;
+}
+
+.nav_link:hover {
+    color: aliceblue;
+}
+
+.button {
+    padding: 6px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +74,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color:white;
+    color: white;
     background: url('../img/redhood.jpg') no-repeat center;
     background-size: cover;
     background-position: center;
-    backdrop-filter:blur(0.3rem);
+    backdrop-filter: blur(0.3rem);
+    padding-top: 80px; /* Añadir este padding para evitar que el contenido quede debajo de la barra de navegación */
 }
 
 .container {
@@ -26,128 +89,65 @@ body {
     padding: 30px 40px;
 }
 
-.container h1 {
-    font-size:36px;
-    text-align: center;
-}
-
-.container .input-box {
+.form-container {
     position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 50px 0px;
 }
 
-.input-box input {
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-box input { 
     width: 100%;
-    height: 100%;
-    background: transparent;
+    padding: 10px;
     border: none;
     outline: none;
-    border: 2px solid rgba(241, 215, 215);
-    border-radius: 40px;
-    font-size: 16px;
-    padding: 20px 45px 20px 20px;
+    background: rgba(255, 255, 255, 0.1);
     color: white;
-}
-
-.input-box input::placeholder {
-    color:rgb(255, 255, 255);
-    
+    font-size: 16px;
+    border-radius: 5px; /* barras donde insertar datos */
 }
 
 .input-box i {
     position: absolute;
-    right: 20px;
     top: 50%;
+    right: 10px;
     transform: translateY(-50%);
-    font-size: 20px;
+    color: white;
 }
 
-.container .recordar-olvidar {
+.recordar-olvidar {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    margin: 15px;
+    margin-bottom: 20px;
 }
 
-.recordar-olvidar label input {
-    accent-color: rgb(76, 76, 226);
-    margin-right: 3px;
-}
-
-.recordar-olvidar a {
-    color:rgb(241, 215, 215);
-    text-decoration: none;
-}
-
-.recordar-olvidar a:hover {
-    text-decoration: underline;
-}
-
-.container .btn {
+.btn {
     width: 100%;
-    height: 45px;
-    background: #a37e7e;
+    padding: 10px;
     border: none;
     outline: none;
-    border-radius: 40px;
-    box-shadow: rgb(241, 215, 215);
-    cursor: pointer;
+    background: #fff;
+    color: black;
     font-size: 16px;
-    color: white;
-    font-weight: 600;
-}
-
-
-
-.container .enlace-registro {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.enlace-registro p a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.enlace-registro p a:hover {
-    text-decoration: underline;
-}
-
-.form-container.sign-up button[type="submit"] {
-    width: 100%;
-    height: 45px;
-    background: #a37e7e;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: rgb(241, 215, 215);
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-    transition: 1s ease-in-out;
 }
 
-.container .active .form-container .sign-in{
-    transform:translateY(-450px) ;
+.btn:hover {
+    background: #ddd;
 }
 
-.form-container .Acepto-terminos {
-    font-size: 14.5px;
+.enlace-registro {
     text-align: center;
-    margin: 20px;
 }
 
-.form-container .signUp-link p a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.form-container .signUp-link p a:hover {
+.enlace-registro a {
+    color: #fff;
     text-decoration: underline;
 }

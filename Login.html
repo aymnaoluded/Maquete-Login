@@ -30,38 +30,78 @@
     </nav>
     </header>
 
+    <!---home-->
 
-        <div class="container">
-            <div class="form-container sign-in">
-            <form action="index.html">
-                <i class="uil uil-times form-close"></i>
-                <h1>Login</h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Username"
-                    required>
-                    <i class='uil uil-user'></i>
-                </div>
-    
-                <div class="input-box">
-                    <input type="password"
-                    placeholder="password"required>
-                    <i class='uil uil-lock-alt'></i>
-                    <i class='uil uil-eye-slash contraseña'></i>
-                </div>
-    
-                <div class="recordar-olvidar">
-                    <label><input type="checkbox"> Acuérdate de mí</label>
-                    <a href="#"> Has olvidado tu contraseña?</a>
-                </div>
-                
-                <button type="submit" class="btn">Login</button>
-                </a>
-    
-                <div class="enlace-registro">
-                    <p>No tienes cuenta? <a href="#">Registar</a></p>
-                </div>
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form-close"></i>
+            <!---login form-->
+            <div class="from login_form">
+                <form action="#">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="username" placeholder="Ingresa tu usuario" required />
+                        <i class="uil uil-user username"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Ingresa tu contrasena" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember me?</label>
+                        </span>
+                        <a href="#" class="forgot_pw"> forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="login_sigup"> Don't have an account? <a href="#" id="signup">Signup</a></div>
+                </form>
             </div>
 
+            
+            <!--signup form-->
+                <div class="from signup_form">
+                    <form action="#">
+                        <h2>signup</h2>
     
+                        <div class="input_box">
+                            <input type="username" placeholder="Ingresa tu usuario" required />
+                            <i class="uil uil-user username"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" placeholder="Create your contrasena" required />
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm your contrasena" required />
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <button class="button">Signup Now</button>
+    
+                        <div class="login_sigup"> Alredy have an account? <a href="#" id="login">Login</a></div>
+                    </form>
+                </div>
+        </div>
+    </section>
+
+    <script src="Login.js"></script>
+
+
+    
+           
+
+             
 </body>
 </html>

@@ -8,146 +8,235 @@ a {
     text-decoration: none;
 }
 
-.header {
+.header{
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 80px;
     width: 100%;
     z-index: 100;
     padding: 0 20px;
-    background: rgba(0, 0, 0, 0.);
 }
 
 .nav {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+max-width: 1100px;
+width: 100%;
+margin: 0 auto;
 }
 
-.nav_logo, .nav_link, .button {
-    color: #fff;
+.nav, .nav_item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo,
+.nav_link,
+.button{
+    color: white;
 }
 
 .nav_logo {
     font-size: 25px;
 }
 
-.nav_items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
+.nav_item {
     column-gap: 25px;
+
 }
 
-.nav_link {
-    color: #fff;
+.nav_link:hover{
+    color: white;
 }
 
-.nav_link:hover {
-    color: aliceblue;
-}
-
-.button {
+.button{
     padding: 6px 24px;
-    border: 2px solid #fff;
+    border: 2px solid white;
     background: transparent;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.button:active {
+.button:active{
     transform: scale(0.98);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
-    background: url('../img/redhood.jpg') no-repeat center;
+
+
+/* home */
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/img/redhood.jpg");
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(0.3rem);
-    padding-top: 80px; /* Añadir este padding para evitar que el contenido quede debajo de la barra de navegación */
 }
 
-.container {
-    width: 420px;
-    background: transparent;
-    border-radius: 10px;
-    padding: 30px 40px;
-}
-
-.form-container {
-    position: relative;
-}
-
-.form-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.input-box {
-    position: relative;
-    margin-bottom: 20px;
-}
-.input-box input { 
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 16px;
-    border-radius: 5px; /* barras donde insertar datos */
-}
-
-.input-box i {
+.home::before {
+    content: '';
     position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: white;
-}
-
-.recordar-olvidar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.btn {
+    height: 100%;
     width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+
+.home.show::before {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* From */
+
+.form_container {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+
+.home.show .form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.form_container.active {
+    display: none;
+}
+
+.signup_form {
+    display: none;
+}
+
+.form_container.active .signup_form{
+    display: block;
+}
+
+.form_container.active .login_form{
+    display: none;
+}
+
+.form-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
     color: black;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 22px;
+    opacity: 0.7;
     cursor: pointer;
 }
 
-.btn:hover {
-    background: #ddd;
-}
-
-.enlace-registro {
+.form_container h2{
+    font-size: 22px;
+    color: black;
     text-align: center;
 }
 
-.enlace-registro a {
-    color: #fff;
+.input_box {
+    margin: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+/* casillas */
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: black;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid white;
+}
+
+.input_box input:focus{
+border-color: violet;
+}
+
+.input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* iconos */
+.input_box i.username,
+.input_box i.password{
+    left: 0;
+}
+
+.input_box input:focus ~ i.username,
+.input_box input:focus ~ i.password {
+    border-color: violet;
+    }
+    
+.input_box i.pw_hide {
+    right: 0;
+    font: 18px;
+}
+
+.option_field {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* forgot pass*/
+.form_container a {
+    color:black;
+}
+
+.form_container a:hover {
     text-decoration: underline;
+}
+
+.checkbox {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+/* check rembember me 
+.checkbox input {
+    accent-color: #7d2ae8;
+} */
+
+.checkbox label {
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+}
+
+.form_container .button {
+    background:violet;
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.login_signup {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
 }

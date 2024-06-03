@@ -108,7 +108,7 @@ margin: 0 auto;
     transition: all 0.5s ease-out;
 }
 
-.home.show .form_container {
+.home .show .form_container {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
@@ -190,6 +190,7 @@ border-color: violet;
 .input_box i.pw_hide {
     right: 0;
     font: 18px;
+    cursor: pointer;
 }
 
 .option_field {
@@ -215,10 +216,10 @@ border-color: violet;
     font-size: 12px;
 }
 
-/* check rembember me 
+/* check rembember me */
 .checkbox input {
     accent-color: #7d2ae8;
-} */
+} 
 
 .checkbox label {
     font-size: 12px;

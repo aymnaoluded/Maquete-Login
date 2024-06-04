@@ -8,95 +8,74 @@
     <link rel="stylesheet" href="assets/css/style-login.css">
     
 </head>
-
-<body>
-    <header class="header">
-        
+<header class="header">
     <nav class="nav">
         <a href="#" class="nav_logo">Tumanga</a>
-
         <ul class="nav_items">
             <li class="nav_item">
-
                 <a href="#" class="nav_link">Home</a>
                 <a href="#" class="nav_link">Manga</a>
                 <a href="#" class="nav_link">Services</a>
                 <a href="#" class="nav_link">Contact</a>
             </li>
         </ul>
-
         <button class="button" id="form-open">Login</button>
-        
     </nav>
-    </header>
+</header>
 
-    <!---home-->
-
-    <section class="home">
-        <div class="form_container">
-            <i class="uil uil-times form-close"></i>
-            <!---login form-->
-            <div class="from login_form">
-                <form action="#">
-                    <h2>Login</h2>
-
-                    <div class="input_box">
-                        <input type="username" placeholder="Ingresa tu usuario" required />
-                        <i class="uil uil-user username"></i>
-                    </div>
-
-                    <div class="input_box">
-                        <input type="password" placeholder="Ingresa tu contrasena" required />
-                        <i class="uil uil-lock password"></i>
-                        <i class="uil uil-eye-slash pw_hide"></i>
-                    </div>
-
-                    <div class="option_field">
-                        <span class="checkbox">
-                            <input type="checkbox" id="check">
-                            <label for="check">Remember me?</label>
-                        </span>
-                        <a href="#" class="forgot_pw"> forgot password?</a>
-                    </div>
-
-                    <button class="button">Login Now</button>
-
-                    <div class="login_sigup"> Don't have an account? <a href="#" id="signup">Signup</a></div>
-                </form>
-            </div>
-
-            
-            <!--signup form-->
-                <div class="from signup_form">
-                    <form action="#">
-                        <h2>signup</h2>
-    
-                        <div class="input_box">
-                            <input type="username" placeholder="Ingresa tu usuario" required />
-                            <i class="uil uil-user username"></i>
-                        </div>
-    
-                        <div class="input_box">
-                            <input type="password" placeholder="Create your contrasena" required />
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw_hide"></i>
-                        </div>
-
-                        <div class="input_box">
-                            <input type="password" placeholder="Confirm your contrasena" required />
-                            <i class="uil uil-lock password"></i>
-                            <i class="uil uil-eye-slash pw_hide"></i>
-                        </div>
-    
-                        <button class="button">Signup Now</button>
-    
-                        <div class="login_sigup"> Alredy have an account? <a href="#" id="login">Login</a></div>
-                    </form>
+<section class="home">
+    <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login form -->
+        <div class="from login_form">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="input_box">
+                    <input type="username" placeholder="Ingresa tu usuario" required />
+                    <i class="uil uil-user username"></i>
                 </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Ingresa tu contraseña" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <div class="option_field">
+                    <span class="checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember me?</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                </div>
+                <button class="button">Login Now</button>
+                <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
         </div>
-    </section>
 
-    <script src="form.js"></script>
-   
-</body>
+        <!-- Signup form -->
+        <div class="from signup_form">
+            <form action="#">
+                <h2>Signup</h2>
+                <div class="input_box">
+                    <input type="username" placeholder="Ingresa tu usuario" required />
+                    <i class="uil uil-user username"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Create your contraseña" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Confirm your contraseña" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                <button class="button">Signup Now</button>
+                <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="./assets/js/form.js"></script>
+
 </html>

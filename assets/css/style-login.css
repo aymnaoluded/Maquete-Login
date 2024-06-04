@@ -67,7 +67,7 @@ margin: 0 auto;
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/img/redhood.jpg");
+    background-image: url(/assets/img/redhood.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -108,19 +108,22 @@ margin: 0 auto;
     transition: all 0.5s ease-out;
 }
 
-.home .show .form_container {
+.home.show .form_container {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
 
-.form_container.active {
-    display: none;
-}
-
 .signup_form {
     display: none;
 }
+
+.form_container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease-out;
+}
+
 
 .form_container.active .signup_form{
     display: block;

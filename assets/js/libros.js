@@ -99,13 +99,9 @@ export const comics = [
         "precio": "$ 20.000",
 
     },
-    
-]
-
-    export const mangas = [
     {
         "serie": "Manga",
-        "id": "001",
+        "id": "010",
         "publicaion": "Noviembre 30, 2013",
         "name": "Vagabond #1",
         "escritor": "Takehiko Inoue",
@@ -116,7 +112,7 @@ export const comics = [
 
     {
         "serie": "Manga",
-        "id": "002",
+        "id": "011",
         "publicaion": "Octubre 10, 2015",
         "name": "Vinland Saga #1",
         "escritor": "Makoto Yukimura",
@@ -127,7 +123,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "003",
+        "id": "012",
         "publicaion": "Diciembre 01, 1990",
         "name": "Berserk #1",
         "escritor": "Kentaro Miura",
@@ -138,7 +134,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "004",
+        "id": "013",
         "publicaion": "Octubre 01, 2013",
         "name": "Hunter X Hunter #1",
         "escritor": "Yoshihiro Togashi",
@@ -149,7 +145,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "005",
+        "id": "014",
         "publicaion": "Noviembre 12, 2004",
         "name": "One Piece #1",
         "escritor": "Eiichiro Oda",
@@ -160,7 +156,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "006",
+        "id": "015",
         "publicaion": "Marzo 06, 2020",
         "name": "Jujutsu Kaisen #1",
         "escritor": "Gege Akutami",
@@ -171,7 +167,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "007",
+        "id": "016",
         "publicaion": "Octubre 01, 1990",
         "name": "Slam Dunk #1",
         "escritor": "Takehiko Inoue",
@@ -182,7 +178,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "008",
+        "id": "017",
         "publicaion": "Noviembre 04, 2014",
         "name": "My Hero Academia",
         "escritor": "Kohei Horikoshi",
@@ -193,7 +189,7 @@ export const comics = [
     },
     {
         "serie": "Manga",
-        "id": "009",
+        "id": "019",
         "publicaion": "Febrero 17, 2012",
         "name": "Tokyo Ghoul #1",
         "escritor": "Sui Ishida",
@@ -202,7 +198,110 @@ export const comics = [
         "precio": "$ 15.000",
 
     },
+    
 ]
+
+//     export const mangas = [
+//     {
+//         "serie": "Manga",
+//         "id": "010",
+//         "publicaion": "Noviembre 30, 2013",
+//         "name": "Vagabond #1",
+//         "escritor": "Takehiko Inoue",
+//         "descripcion":"Musashi Miyamoto: el espadachín más famoso de Japón, creador del estilo de las dos espadas (Niten Ichi-ryu) y célebre por permanecer invicto tras 61 duelos a lo largo de sus sesenta años de vida. De la pluma de Takehiko Inoue, el maestro detrás de Slam Dunk, llega este manga cargado de emoción, drama y combates, que narra la historia del legendario guerrero desde sus 17 años, cuando aún era conocido como Takezo Shinmen y recién había participado en la Batalla de Sekigahara. ¡No te pierdas los orígenes de este icónico personaje!",
+//         "sprite1":"https://th.bing.com/th/id/OIP.RMJDZsUnRG--srTjGa9QPwAAAA?rs=1&pid=ImgDetMain" ,
+//         "precio": "$ 15.000",
+//     },
+
+//     {
+//         "serie": "Manga",
+//         "id": "011",
+//         "publicaion": "Octubre 10, 2015",
+//         "name": "Vinland Saga #1",
+//         "escritor": "Makoto Yukimura",
+//         "descripcion":"En el siglo XI, un joven guerrero llamado Thorfinn se une a una banda de mercenarios normandos liderada por Askeladd. Thorfinn solo tiene una cosa en mente: vengar la muerte de su padre, el poderoso guerrero Thors, quien fue asesinado por Askeladd. Para ganarse el derecho a un duelo, nuestro protagonista debe ayudar a su enemigo jurado a cosechar victorias, y así ambos se verán envueltos en una violenta guerra por la corona, todo esto enmarcado por la leyenda de la tierra prometida: la pacífica y eterna Vinland.",
+//         "sprite1": "https://th.bing.com/th/id/OIP._0B4fMDxCmPJ5nRR1QpjHQHaLK?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "012",
+//         "publicaion": "Diciembre 01, 1990",
+//         "name": "Berserk #1",
+//         "escritor": "Kentaro Miura",
+//         "descripcion":"Un hombre completamente vestido de negro que se hace llamar Guts, que tiene una mano artificial de hierro duro y que carga una espada gigantesca que supera su estatura. En el lugar al cual se dirige llueve sangre y hay montañas de cadáveres apilados. Puck, un elfo que se mantiene a su lado desde que Guts le salvó la vida, quedó impresionado por su increíble fuerza, aunque a la vez le causa temor lo violento que es el mundo en el que él vive. Una horda de espíritus malignos que obstaculizan su camino. ¿acaso la marca que tiene en el cuello lo incita a buscar la venganza.?No te pierdas el primer tomo de esta increíble saga.",
+//         "sprite1": "https://th.bing.com/th/id/OIP.JN_y8GfHneueUZUbkXzR-gHaKS?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "013",
+//         "publicaion": "Octubre 01, 2013",
+//         "name": "Hunter X Hunter #1",
+//         "escritor": "Yoshihiro Togashi",
+//         "descripcion":"Un mundo fantástico en el que existen bestias maléficas, tesoros ocultos… y hunters o “cazadores”, personas que viven increíbles peripecias para desentrañar los misterios del planeta. Gon no piensa detenerse hasta cumplir su verdadero objetivo: encontrar al legendario hunter Ging Freecss, ¡su padre, que desapareció cuando él era un niño!",
+//         "sprite1": "https://th.bing.com/th/id/OIP.TUUzoc4mANybw5QGxqgAIAHaLH?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "014",
+//         "publicaion": "Noviembre 12, 2004",
+//         "name": "One Piece #1",
+//         "escritor": "Eiichiro Oda",
+//         "descripcion":"Esta es la gran Era Pirata. Gold Roger, el legendario “Rey de los piratas” ha dejado el “One Piece” - su legendario Tesoro - escondido en una zona del mundo llamada “GRAND LINE” y los piratas más fuertes compiten por hallarlo. Un niño llamado Luffy idolatraba a los piratas, en especial a Shanks, el líder de una tripulación que visitó su villa. Un día, por accidente, Luffy comió una “fruta del diablo” del botín de Shanks. Gracias a esa fruta, su cuerpo se ha vuelto de goma pero nunca podrá nadar. El día que los piratas abandonaron la villa, Shanks le obsequió a Luffy su mas preciada posesión: su sombrero de paja. Diez años han pasado desde ese día y Luffy ha salido al mar buscando convertirse en el nuevo “Rey de los piratas”. ¡Aquí inicia la gran aventura de Luffy!",
+//         "sprite1": "https://th.bing.com/th/id/OIP.PC4b4IQ_bOz_m-K-qUZdCgHaL0?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "015",
+//         "publicaion": "Marzo 06, 2020",
+//         "name": "Jujutsu Kaisen #1",
+//         "escritor": "Gege Akutami",
+//         "descripcion":"Yuji Itadori es un joven con habilidades físicas excepcionales que se une al club de ocultismo de la escuela porque le permite salir temprano y visitar a su abuelo en el hospital. Este, antes de morir, le pide que use su fuerza para ayudar a las personas. Ahí se aparece un estudiante de hechicero, Fushiguro, y le pide a Yuji el objeto maldito que encontró. Él le dice que sus compañeros del club van a abrirlo en la escuela, y ambos corren a rescatarlos. Al llegar, están rodeados de maldiciones (monstruos), y para salvar a sus compañeros, Yuji se traga el objeto maldito y se convierte en Sukuna.",
+//         "sprite1": "https://th.bing.com/th/id/OIP.rvjpeHMzdboAjO-LsWNOBgHaLH?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "016",
+//         "publicaion": "Octubre 01, 1990",
+//         "name": "Slam Dunk #1",
+//         "escritor": "Takehiko Inoue",
+//         "descripcion":"Slam Dunk narra la historia de un estudiante de preparatoria llamado Hanamichi Sakuragi, que sufre una serie de rechazos amorosos hasta que un buen día conoce a una chica a quien le fascina el baloncesto. A causa de esto Hanamichi fingirá ser un deportista y se inscribirá en el club de baloncesto del colegio con la esperanza de poder impresionarla y salir con ella. Aunque con el tiempo descubrirá en el baloncesto un deporte que lo exigirá y pondrá a prueba sacando lo mejor de él. ",
+//         "sprite1": "https://images-na.ssl-images-amazon.com/images/I/91hPkfq6MLL.jpg",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "017",
+//         "publicaion": "Noviembre 04, 2014",
+//         "name": "My Hero Academia",
+//         "escritor": "Kohei Horikoshi",
+//         "descripcion":"El estudiante de secundaria Izuku Midoriya quiere ser un héroe más que nada, pero no tiene una pizca de poder en él. Sin posibilidad de entrar en la prestigiosa Academia U.A., que es la secundaria mas prestigiosa en donde estudian los futuros héroes, su vida se parece cada vez más a un callejón sin salida. Luego, un encuentro con All Might, el héroe más grande de todos, el tiene la oportunidad de cambiar su destino.",
+//         "sprite1": "https://i0.wp.com/www.portesdumultivers.fr/wp-content/uploads/2019/05/Couv-my-hero-academia-K%C5%8Dhei-Horikoshi-1.jpg?w=1080",
+//         "precio": "$ 15.000",
+
+//     },
+//     {
+//         "serie": "Manga",
+//         "id": "019",
+//         "publicaion": "Febrero 17, 2012",
+//         "name": "Tokyo Ghoul #1",
+//         "escritor": "Sui Ishida",
+//         "descripcion":"La ciudad de Tokio vive atemorizada por los atroces crímenes cometidos por los Ghouls, unas misteriosas criaturas que se ocultan entre sus habitantes y se alimentan de carne humana. Kaneki Ken, un joven y tímido universitario sobrevive a una operación de trasplante de órganos tras ser atacado y casi devorado por Rize una chica de quien se encontraba enamorado; tras abandonar el hospital Kaneki sufre un extraño proceso de metamorfosis que provocará un inesperado giro en su vida.",
+//         "sprite1": "https://th.bing.com/th/id/OIP.82Pt8p-4A5VkTpGntXVKeQHaKS?rs=1&pid=ImgDetMain",
+//         "precio": "$ 15.000",
+
+//     },
+// ]
 
 
 

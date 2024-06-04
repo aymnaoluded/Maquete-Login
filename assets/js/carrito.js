@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         ${comics.sprite1 ? `<img src="${comics.sprite1}" class="card-img-top" alt="${comics.name || 'Imagen del cómic'}">` : ''}
                         <p class="card-text">Escritor: ${comics.escritor || 'N/A'}</p>
                         <p class="card-text">Publicación: ${comics.publicaion || 'N/A'}</p>
-                        <p class="card-text">Descripción: ${comics.descripcion || 'N/A'}</p>
                         <p class="card-text">Precio: ${comics.precio ? `${comics.precio}` : 'N/A'}</p>
                         <button class="btn btn-danger btn-remove-from-cart" data-id="${comics.id}">Eliminar del carrito</button>
                     </div>
@@ -47,3 +46,5 @@ function removeFromCart(comicId) {
     alert('Cómic eliminado del carrito');
     location.reload(); 
 }
+
+

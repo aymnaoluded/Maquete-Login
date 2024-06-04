@@ -1,7 +1,6 @@
-
-
-
-
+header{
+    z-index: 100;
+}
 .d-item{
     height: 600px;
 }

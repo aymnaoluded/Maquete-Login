@@ -1,0 +1,20 @@
+body{
+    background-color: white;
+}
+
+.d-info{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: black;
+
+}
+
+#imagePage{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+}

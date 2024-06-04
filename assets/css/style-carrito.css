@@ -1,0 +1,21 @@
+body{
+    background-image: url(../img/fondoN.png);    
+  
+}
+
+header{
+    z-index: 100;
+}
+.d-item{
+    height: 600px;
+}
+
+.d-img{
+    height: 100%;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -8,213 +8,150 @@
     <link rel="stylesheet" href="./assets/css/style-libros.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-100" id="nav">
-            <div class="container-fluid opacity-100 py-3">
-            <a class="navbar-brand opacity-100" href="#"><img src="./assets/img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item ">
-                    <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  "  href="./comics.html">Comics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="./manga.html">Manga</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#footer">Contactanos</a>
-                </li>
-                </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-warning" type="submit">Search</button>
-                <a href="./carrito.html"><button class="btn btn-outline ms-4 me-3 " type="button"><i class="fa-solid fa-cart-shopping"></i></button></a>
-                <a href="./Login.html"><button class="btn btn-outline ms-4 me-3 pb-2" type="button"><i class="fa-solid fa-user"></i></button></a>
-                </form>
-            </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row" id="card-container">
-            <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-img" >
-                <img src="" alt="imagen de personaje" id="imagePage" width="600px">
-            </div>
-
-            <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-info">
-                <h1 id="namePage"></h1>
-                <br>
-                <h2 id="publicaionPage"></h2>
-                <br>
-                <h2 id="escritorPage"></h2>
-                <br>
-                <h5 id="descripcionPage"></h5>
-                <br>
-                <h2 id="precioPage"></h2>
-                <div class="botones">
-                  <a class="btn btn-dark text-light mt-2 mb-2" href="./comics.html">Volver</a>
-              </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-100" id="nav">
-        <div class="container-fluid opacity-100">
-          <a class="navbar-brand opacity-100" href="./index.html"><img src="../assets/img/logo.png"></a>
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-100" id="nav">
+          <div class="container-fluid opacity-100 py-3">
+          <a class="navbar-brand opacity-100" href="#"><img src="./assets/img/logo.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link "  href="../index.html">Inicio</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                  <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Comics</a>
+                <li class="nav-item">
+                  <a class="nav-link "  href="./comics.html">Libros</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link " href="../index-allmangas/manga.html">Manga</a>
+                  <a class="nav-link " href="#footer">Contactanos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#footer">Contactanos</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
+              </ul>
+              <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-warning" type="submit">Search</button>
-              <a href="./Login.html"><button class="btn btn-outline ms-4 " type="button"> <i class="fa-solid fa-user"></i></button></a>            
-            </form>
+              <a href="./carrito.html"><button class="btn btn-outline ms-4 me-3 " type="button"><i class="fa-solid fa-cart-shopping"></i></button></a>
+              <a href="./Login.html"><button class="btn btn-outline ms-4 me-3 pb-2" type="button"><i class="fa-solid fa-user"></i></button></a>
+              </form>
           </div>
-        </div>
+          </div>
       </nav>
-      
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-img" id="imagen" >
-                <a  ><img src="../assets/img/infinity war.jpg" class="card-img-top" alt="infinity war"></a>
-            </div>
-            <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-info">
-                <h1 class="titulo">Infinity War #1</h1>
-                <br>
-                <h2>Publicación:</h2>
-                <p>Junio 10, 1992</p>
-                <br>
-                <h2>Escritor:</h2>
-                <p>Jim Starlin</p>
-                <br>
-                <p>Cuando aparecen los malvados dobles de los héroes de Marvel, ¡es una guerra total!  
-                    ¿Por qué Magus los ha desatado en un mundo 
-                    desprevenido? ¿Y los héroes son la única esperanza... Thanos?
-                </p>
-                <br>
-                <h2>Stock:</h2><p>En existencias</p>
-                <br>
-                <h2>Precio :</h2><p class="precio">$ 20.000</p>
-                <div class="botones">
-                    <button class="btn btn-dark mt-2 button"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;&nbsp;Agregar al Carrito </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <footer id="footer" class="bg-light text-dark pt-5 pb-4">
+  </header>
 
-
-
-
-
-    <footer id="footer" class="bg-light text-dark pt-5 pb-4 mt-3">
-
-      <div class="container text-center text-md-start">
-
-        <div class="row text-center text-md-start ">
-
-          <div class="col-md-4 col-lg-6 col-xl-6 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Nosotros</h5>
-            <hr class="mb-4">
-            <p >
-              En nuestra tienda de cómics, ofrecemos una amplia selección de historietas, desde los clásicos 
-              hasta las últimas novedades. Pero somos más que una tienda; somos una comunidad apasionada que 
-              comparte la magia de los cómics.
-
-              En Comics Sharingan, nos esforzamos por crear un ambiente acogedor donde los aficionados pueden 
-              reunirse, compartir sus pasiones y participar en eventos emocionantes. Además, estamos comprometidos 
-              con apoyar a la comunidad local y causas importantes para nosotros.
-
-            </p>
+  <div class="container-fluid">
+      <div class="row" id="card-container">
+          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-img" >
+              <img src="" alt="imagen de personaje" id="imagePage" width="600px">
           </div>
 
-         
-
-          <div class="col-md-4 col-lg-6 col-xl-4 mx-auto mt-3">
-
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
-            <hr class="mb-4">
-            <p>
-              <li class="fas fa-home me-3"></li>Chile, Av. Independencia 1225
-            </p>
-
-            <p>
-              <li class="fas fa-envelope me-3"></li>comic.sharingan@gmail.com
-            </p>
-
-            <p>
-              <li class="fas fa-phone me-3"></li>+56 99999999
-            </p>
-            
+          <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 d-info">
+              <h1 id="namePage"></h1>
+              <br>
+              <h2 id="publicaionPage"></h2>
+              <br>
+              <h2 id="escritorPage"></h2>
+              <br>
+              <h5 id="descripcionPage"></h5>
+              <br>
+              <h2 id="precioPage"></h2>
+              <div class="botones">
+                <a class="btn btn-dark text-light mt-2 mb-2" href="./comics.html">Volver</a>
+            </div>
           </div>
 
+      </div>
+  </div>
+
+
+
+
+
+  <footer id="footer" class="bg-light text-dark pt-5 pb-4 mt-3">
+
+    <div class="container text-center text-md-start">
+
+      <div class="row text-center text-md-start ">
+
+        <div class="col-md-4 col-lg-6 col-xl-6 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Nosotros</h5>
           <hr class="mb-4">
+          <p >
+            En nuestra tienda de cómics, ofrecemos una amplia selección de historietas, desde los clásicos 
+            hasta las últimas novedades. Pero somos más que una tienda; somos una comunidad apasionada que 
+            comparte la magia de los cómics.
 
-          <div class="text-center mb-2">
+            En Comics Sharingan, nos esforzamos por crear un ambiente acogedor donde los aficionados pueden 
+            reunirse, compartir sus pasiones y participar en eventos emocionantes. Además, estamos comprometidos 
+            con apoyar a la comunidad local y causas importantes para nosotros.
 
-            <p>
-              Copyright Todos los derechos reservados
-              <a href="#">
-                <strong class="text-warning">Test</strong>
-              </a>
-            </p>
-          </div>
+          </p>
+        </div>
 
-          <div class="text-center">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-facebook "></i></a>
-              </li>
+       
 
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-twitter "></i></a>
-              </li>
+        <div class="col-md-4 col-lg-6 col-xl-4 mx-auto mt-3">
 
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-google-plus "></i></a>
-              </li>
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+          <hr class="mb-4">
+          <p>
+            <li class="fas fa-home me-3"></li>Chile, Av. Independencia 1225
+          </p>
 
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-linkedin-in "></i></a>
-              </li>
+          <p>
+            <li class="fas fa-envelope me-3"></li>comic.sharingan@gmail.com
+          </p>
 
-              <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class="fab fa-youtube "></i></a>
-              </li>
-            </ul>
-          </div>
+          <p>
+            <li class="fas fa-phone me-3"></li>+56 99999999
+          </p>
+          
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="text-center mb-2">
+
+          <p>
+            Copyright Todos los derechos reservados
+            <a href="#">
+              <strong class="text-warning">Test</strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-facebook "></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-twitter "></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-google-plus "></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-linkedin-in "></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"> <i class="fab fa-youtube "></i></a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
-    </footer>
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/78d6b86b51.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/78d6b86b51.js" crossorigin="anonymous"></script>
 
-  </body>
-  </html>
+</body>
+</html>

@@ -1,29 +1,27 @@
-import { comics } from "./libros.js";
-
 document.addEventListener("DOMContentLoaded", function() {
     const cartContainer = document.getElementById('cartContainer');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const carro = JSON.parse(localStorage.getItem('carro')) || [];
 
-    if (cart.length === 0) {
+    if (carro.length === 0) {
         cartContainer.innerHTML = '<p class="text-center">El carrito está vacío</p>';
         return;
     }
 
-    cart.forEach(comics => {
-        if (comics) {
+    carro.forEach(libros => {
+        if (libros) {
             const comicCard = document.createElement('div');
             comicCard.className = 'col-md-4 mb-4';
             comicCard.innerHTML = `
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-title">${comics.name || 'N/A'}</h2>
+                        <h2 class="card-title">${libros.name || 'N/A'}</h2>
                     </div>
                     <div class="card-body">
-                        ${comics.sprite1 ? `<img src="${comics.sprite1}" class="card-img-top" alt="${comics.name || 'Imagen del cómic'}">` : ''}
-                        <p class="card-text">Escritor: ${comics.escritor || 'N/A'}</p>
-                        <p class="card-text">Publicación: ${comics.publicaion || 'N/A'}</p>
-                        <p class="card-text">Precio: ${comics.precio ? `${comics.precio}` : 'N/A'}</p>
-                        <button class="btn btn-danger btn-remove-from-cart" data-id="${comics.id}">Eliminar del carrito</button>
+                        ${libros.sprite1 ? `<img src="${libros.sprite1}" class="card-img-top" alt="${libros.name || 'Imagen del cómic'}">` : ''}
+                        <p class="card-text">Escritor: ${libros.escritor || 'N/A'}</p>
+                        <p class="card-text">Publicación: ${libros.publicaion || 'N/A'}</p>
+                        <p class="card-text">Precio: ${libros.precio ? `${libros.precio}` : 'N/A'}</p>
+                        <button class="btn btn-danger btn-remove-from-cart" data-id="${libros.id}">Eliminar del carrito</button>
                     </div>
                 </div>
             `;
@@ -33,18 +31,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelectorAll('.btn-remove-from-cart').forEach(button => {
         button.addEventListener('click', function() {
-            const comicId = this.getAttribute('data-id');
-            removeFromCart(comicId);
+            const libroId = this.getAttribute('data-id');
+            removeFromCart(libroId);
         });
     });
 });
 
-function removeFromCart(comicId) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart = cart.filter(comics => comics.id != comicId);
-    localStorage.setItem('cart', JSON.stringify(cart));
+function removeFromCart(libroId) {
+    let carro = JSON.parse(localStorage.getItem('carro')) || [];
+    carro = carro.filter(libros => libros.id != libroId);
+    localStorage.setItem('carro', JSON.stringify(carro));
     alert('Cómic eliminado del carrito');
     location.reload(); 
 }
-
-

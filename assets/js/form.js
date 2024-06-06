@@ -5,6 +5,7 @@ const formOpenBtn = document.querySelector("#form-open"),
     signupBtn = document.querySelector("#signup"),
     loginBtn = document.querySelector("#login"),
     pwShowHide = document.querySelectorAll(".pw_hide");
+    const loginNowBtn = document.querySelector("#login-now");
 
 formOpenBtn.addEventListener("click", () => home.classList.add("show"));
 formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
@@ -30,5 +31,10 @@ loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
     formContainer.classList.remove("active");
 });
+loginNowBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "index.html";
+})
+
 
 

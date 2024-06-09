@@ -26,7 +26,7 @@ const obtenerLibrosAsyncAwait = async () => {
 
 // Mostrar datos de comics en libros.html
 const enviarDatos = (serie, id, name, publicaion, escritor, descripcion, sprite1, precio) => {
-    const rutaArchivoHTML = "../TodosComics.html";
+    const rutaArchivoHTML = "../TodosMangas.html";
     fetch(rutaArchivoHTML)
         .then(response => response.text())
         .then((html) => {
@@ -77,7 +77,7 @@ const mostrarLibro = async () => {
 
         libros.forEach(libro => {
             // Asegúrate de que cada libro tenga una propiedad `serie`
-            if (libro.serie === "Marvel" || libro.serie === "DC") {
+            if (libro.serie === "Manga") {
                 const cardCol = document.createElement("div");
                 cardCol.classList.add("col", "col-xl-4", "col-lg-4", "col-md-6", "col-xs-12", "col-sm-12");
 

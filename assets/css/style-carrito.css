@@ -1,21 +1,40 @@
-body{
+body {
     background-image: url(../img/fondoN.png);    
-  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header{
+header {
     z-index: 100;
 }
-.d-item{
+
+.d-item {
     height: 600px;
 }
 
-.d-img{
+.d-img {
     height: 100%;
 }
 
-.h1{
+.h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: #f1f1f1; /* Color de fondo del footer */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 0; /* Espaciado dentro del footer */
 }

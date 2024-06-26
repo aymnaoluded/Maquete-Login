@@ -52,4 +52,35 @@ signupNowBtn.addEventListener("click", (e) => {
     formContainer.classList.remove("active");
 });
 
+loginNowBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const usernamelogin = document.getElementById("usernamelogin").value.trim();
+    const passwordlogin = document.getElementById("passwordlogin").value.trim();
+
+    if (usernamelogin && passwordlogin) {
+        e.preventDefault();
+        alert("Please fill in all fields in the login form");
+    } else {
+        window.location.href = "index.html";
+    }
+});
+
+signupNowBtn.addEventListener("click", (e) => {
+    const usernamesignup = document.getElementById("usernamesignup").value.trim();
+    const passwordsignup = document.getElementById("passwordsignup").value.trim();
+    const confirmpasswordsignup = document.getElementById("confirmpasswordsignup").value.trim();
+
+    if (usernamesignup && passwordsignup && confirmpasswordsignup) {
+        e.preventDefault();
+        alert("Please fill in all fields in the signup form");
+    } else if (passwordsignup !== confirmpasswordsignup) {
+        e.preventDefault();
+        alert("passwords do not match, please confirm your password");
+
+    } else {
+        formContainer.classList.remove("active");
+    }
+
+}); // chekear cambias 
+
 });
